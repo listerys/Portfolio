@@ -1,0 +1,978 @@
+:root {
+    --primary-color: #050401; /* Deep blue-gray */
+    --hover-color: #F7E987; /* Lighter slate blue */
+    --text-color: #ECEFF1; /* Off-white for text */
+    --nav-height: 60px;
+    --font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: #EFECEC; /* Light background for contrast */
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: flex-end; /* Adjusted to maintain the navbar's full width */
+    align-items: center;
+    height: var(--nav-height);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0 20px; /* Add padding for some space on the sides */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-links {
+    display: flex;
+justify-content: flex-end;
+}
+
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    position: relative;
+    transition: color 0.3s ease;
+    font-weight: 600; /* Normal weight for links */
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--hover-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: var(--hover-color);
+    font-weight: 600; /* Semi-bold for hover state */
+}
+
+.nav-link:hover::before, .nav-link:focus::before {
+    transform: scaleX(1);
+}
+
+
+section {
+    padding: 20px;
+
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+#about {
+    font-weight: 600;
+
+    background-color: #050401;
+    padding: 50px;
+padding-top: 27vh;
+    padding-bottom: 27vh;
+}
+
+.about-container {
+    display: flex;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.image-section, .tagline-section {
+    flex: 1;
+
+}
+
+.hexagon-img {
+    width: 400px;
+    height: 382px;
+    background-image: url('IMG_9514.jpg');
+    background-size: cover;
+border-radius: 20px;
+
+    margin: 0 auto; /* Center the hexagon image */
+}
+
+.static-text, .animated-name, .dynamic-text {
+margin: 0px;
+text-align: left;
+    font-size: 24px; /* Adjust based on preference */
+}
+
+.animated-name {
+    /* Animation styles will be added by JavaScript */
+}
+
+#dynamic-role {
+    font-weight: 600;
+color: #FC6736;
+}
+@keyframes fadeInScaleUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-name {
+    animation: fadeInScaleUp 1s ease forwards;
+    font-size: 70px;
+}
+.name{
+    font-weight: 600;
+color: #F7E987;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #ffffff; /* Icon color */
+    margin: 0 10px;
+    font-size: 24px; /* Adjust icon size */
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover, .social-links a:focus {
+    color: #F7E987; /* Change color on hover/focus */
+}
+
+.about-me-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px; /* Adjust spacing as needed */
+    border: 2px solid #FFFFFF; /* White border */
+    color: #FFFFFF; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-family: 'Poppins', sans-serif; /* Consistent font usage */
+    font-size: 16px; /* Adjust size as needed */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    cursor: pointer;
+margin-left: 5px;
+}
+
+.about-me-btn:hover {
+    background-color: #FFFFFF; /* Fill button on hover */
+    color: #121212; /* Change text color to dark for contrast */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.image-section, .static-text, .animated-name, .dynamic-text, .social-links, .about-me-btn {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.image-section { animation-delay: 0.2s; }
+.static-text { animation-delay: 0.4s; }
+.animated-name { animation-delay: 0.6s; }
+.dynamic-text { animation-delay: 0.8s; }
+.social-links { animation-delay: 1s; }
+.about-me-btn { animation-delay: 1.2s; }
+
+
+#about-me {
+    background-color: #f0f0f0; /* Light background for a fresh look */
+    color: #333; /* Dark text for readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+ .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        /* padding: 20px; */
+    }
+
+    .text-section, .logo-section {
+        flex: 1;
+        padding: 20px;
+    }
+.text-section{
+margin-left: 50px;
+}
+
+.logo-section {
+        flex: 1;
+        padding-left: 40px;
+margin-left:40px;
+    }
+    .text-section h2 {
+        font-size: 4em;
+        color: #333;
+        position: relative;
+        animation: slideIn 1s ease-out;
+    }
+    .text-section p {
+        line-height: 2;
+    }
+    .tech-logo {
+        max-width: 400px;
+        height: auto;
+        animation: fadeIn 2s ease-out;
+border-radius: 20px;
+    }
+.aboutme-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px; /* This should add space above the button */
+    border: 2px solid #050401; /* White border for contrast */
+    color: #050401; /* White text for visibility */
+    text-decoration: none; /* Removes underline from the link */
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    margin-left: 5px; /* Adds space to the left of the button */
+font-weight: 600;
+}
+    .aboutme-btn:hover {
+        background-color: #050401;
+color: #fff;
+    }
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            left: -100px;
+        }
+        to {
+            opacity: 1;
+            left: 0;
+        }
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+h2{
+font-size: 150px;
+}
+
+.ReactText{
+color: #029cfd;
+font-weight: 600;
+}
+
+.NodeText{
+color: #28a745;
+font-weight: 600;
+}
+
+.NextText{
+font-weight: 600;
+}
+/* Continue with your existing animation and layout styles */
+
+ .profile-container {
+display: inline-block;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 10px;
+max-width: 600px;
+line-height: 3rem;
+margin-left:150px;
+    }
+    .profile-section {
+        display: inline-block;
+        align-items: flex-start;
+    }
+    .profile-item {
+        display: inline-block;
+        width: 300px;
+    }
+    .profile-label {
+        background-color: #00C853;
+        color: white;
+        padding: 10px 15px;
+        margin: 5px 0;
+        border-radius: 4px;
+        justify-content: space-between;
+        font-weight: bold;
+    }
+    .profile-value {
+        margin-left: 10px;
+    }
+.imagelogo{
+text-align: center;
+}
+
+/* Initial state of the elements before they are revealed */
+.reveal {
+  opacity: 0;
+  transform: translateY(100px);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, visibility 0.6s;
+}
+
+/* State of the elements when they are revealed */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.skilldiv {
+    background-color: #050401;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif; /* Updated to Poppins */
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skills-heading {
+    font-size: 2em; /* Large font size for heading */
+    margin: 0 0 20px 0; /* Adjust spacing */
+    text-align: center; /* Align the heading to the center for consistency */
+}
+
+.skill-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 220px; /* Fixed width */
+    height: auto; /* Changed to auto for dynamic height adjustment */
+    overflow: auto; /* Enables scrolling for overflow content */
+}
+
+.skill-card h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    display: inline-block;
+    background-color: #2a2a2a;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.expert { border: 1px solid #007bff; }
+.intermediate { border: 1px solid #28a745; }
+.basic { border: 1px solid #ffc107; }
+.just-enough { border: 1px solid #dc3545; }
+
+.skills-heading {
+    font-size: 2em; /* Large font size for heading */
+    margin-bottom: 0.5em; /* Adjust space between heading and legend */
+    text-align: center;
+    display: block; /* Ensure the heading is a block-level element */
+    width: 100%; /* Take full width */
+}
+
+.skills-legend {
+    display: block; /* This will make the legend take up its own block-level line */
+    text-align: center; /* Center-align the legend items */
+    margin-bottom: 20px; /* Space between legend and skill cards */
+    width: 100%; /* Take full width to enforce new line */
+}
+
+.legend-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px; /* Space between dot and text */
+    vertical-align: middle; /* Align the dot with the text vertically */
+}
+
+/* Ensure the legend items themselves are also inline or inline-block */
+.skills-legend > div {
+    display: inline-flex; /* Make each legend item an inline-flex container */
+    align-items: center; /* Align the dot and text vertically */
+}
+
+.skill.highlight {
+    background-color: #4a4a4a; /* Darker background for contrast */
+    color: #fff; /* White text color for readability */
+    padding: 5px 10px; /* Padding around the text */
+    margin: 5px; /* Space between each skill */
+    border-radius: 4px; /* Rounded corners */
+    display: inline-block; /* Ensure they line up horizontally */
+    margin-bottom: 10px; /* Additional bottom margin for spacing */
+}
+
+.otherskills{
+
+font-size: 20px;
+padding-left: 110px;
+}
+
+.skillslist{/* padding-left: 106px; */}
+
+.projects-section {
+    background-color: #050401;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.project-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-card-container {
+    width: 300px;
+}
+
+.project-card {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.project-card a {
+    display: block;
+    position: relative;
+}
+
+.project-thumbnail {
+    width: 100%;
+    display: block;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0); /* Start fully transparent */
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1em;
+    opacity: 0;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    border-radius: 8px;
+}
+
+.project-card:hover .project-overlay {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+    opacity: 1;
+}
+
+.project-card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.project-view-text .fa-github { /* Adjust size and margin if necessary */
+    font-size: 1.5em;
+    margin-left: 8px;
+}
+
+.project-card:hover,
+.project-card:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+.other-projects {
+    background-color: #050401;
+    color: #ffffff;
+    padding: 20px;
+    text-align: left; /* Align text to the left */
+    /* padding-left: 142px; */
+}
+
+.otherprojects-heading {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.projects-list {
+    padding: 0;
+    margin: 0; /* Reset default margin */
+}
+
+.project {
+    background-color: #4a4a4a; /* Highlight color */
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block; /* Inline-block for the labels */
+    margin: 5px 10px 5px 0; /* Spacing between labels */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Initial state */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Final state */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.education-section {
+    background-color: #ffffff; /* Light background for the section */
+    color: #333; /* Dark text for readability */
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.education-heading {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 50px;
+    margin: 20px 0;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #007bff; /* Timeline line color */
+}
+
+.timeline-block {
+    margin-bottom: 30px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 8px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #007bff; /* Dot color */
+    box-shadow: 0 0 0 3px #ffffff; /* White border around dot */
+}
+
+.timeline-content {
+    margin-left: 35px;
+    padding: 10px 20px;
+    background: #f9f9f9; /* Light background for content */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.date {
+    display: block;
+    font-size: 0.9em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.degree {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.coursework {
+    font-size: 0.9em;
+    color: #666; /* Lighter text for coursework */
+}
+
+/* Existing styles remain unchanged */
+
+.college-logo {
+    position: absolute;
+    right: 10px; /* Adjust based on your layout */
+    top: 10px; /* Adjust for vertical alignment */
+    width: 60px; /* Adjust based on the size of the logos */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Optional: if you want rounded corners for the logos */
+}
+
+
+/* Continuing from previous styles */
+
+.timeline-content {
+    position: relative;
+    margin-left: 35px;
+    padding: 10px 20px;
+    padding-right: 80px; /* Increase right padding to prevent text overlap by logo */
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.college-logo {
+padding-top: 30px;
+    right: 10px; /* Adjust if necessary */
+    top: 10px; /* Adjust for better alignment */
+    width: 120px; /* Logo width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures the image is nicely fitted */
+}
+
+.date, .degree, .coursework {
+    display: block; /* Ensure these are block level for better control */
+    margin-bottom: 5px; /* Consistent spacing */
+}
+
+/* Ensure the timeline dot is correctly aligned with the content */
+
+/* General Styles */
+
+
+/* General container and layout styling */
+/* Base styling */
+
+.experience{
+background: #f0f0f0;
+}
+
+
+.wetimeline {
+  position: relative;
+  margin: 0 auto;
+  max-width: 960px; /* Added a max-width for better layout control */
+background: #f0f0f0;
+}
+
+.wetimeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #008bff, #ff6a00);
+}
+
+.wetimeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 30px;
+  position: relative;
+  width: 72.8%; /* Changed to 100% for better responsiveness */
+}
+
+.wetimeline-item:nth-child(even) {
+  justify-content: flex-start;
+margin-left: 201px;
+}
+
+.wetimeline-item::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: calc(50% - 1px); /* Adjust for the central line */
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid #ff6a00;
+display: none;
+}
+
+.wetimeline-item:nth-child(even)::before {
+  left: calc(50% - 1px); /* Adjust for the central line */
+  right: auto;
+}
+
+.wetimeline-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0.5px solid #008bff;
+}
+
+.wetimeline-icon img{
+  width: 55px;
+  height: 55px;
+}
+.wetimeline-content {
+  margin-left: 20px;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+    max-width: 29%;
+}
+
+.wetimeline-item:nth-child(even) .wetimeline-content {
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+/* Hover Effects */
+
+
+.wetimeline-item:nth-child(even) .wetimeline-icon {
+position: absolute;
+  margin-left: 253px;
+}
+
+.currentyear{
+text-align: center;
+font-weight: 600;
+}
+
+.about-me-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px; /* Adjust spacing as needed */
+    margin-left: 5px; /* Space from the left */
+    border: 2px solid #FFFFFF; /* White border */
+    color: #FFFFFF; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-family: 'Poppins', sans-serif; /* Consistent font usage */
+    font-size: 16px; /* Adjust size as needed */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    cursor: pointer; /* Indicates a clickable button */
+}
+
+/* Hover effect */
+.about-me-btn:hover {
+    background-color: #FFFFFF; /* Change background to white */
+    color: #000000; /* Change text color to black */
+}
+
+
+/* Base styles remain unchanged */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-link {
+        padding: 8px 10px;
+        margin: 5px 0;
+    }
+    .about-container, .container {
+        flex-direction: column;
+        /* text-align: center; */
+    }
+    .image-section, .tagline-section, .text-section, .logo-section {
+        flex: none;
+        /* width: 100%; */
+        margin: 0 auto;
+    }
+    h2 {
+        font-size: 24px; /* Adjusted for readability on small screens */
+    }
+    .hexagon-img, .tech-logo {
+        width: 100%; /* Makes the image responsive */
+        max-width: 300px; /* Limits the size to maintain aspect ratio */
+        height: auto;
+    }
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0; /* Adjust alignment */
+    }
+    .skills-container, .project-cards-container {
+        flex-direction: column;
+    }
+    .skill-card, .wetimeline-content {
+        /* width: 100%; */ /* Make skill cards and timeline content full width */
+        max-width: none; /* Overrides any max-width set earlier */
+    }
+    .wetimeline-item {
+        /* width: 100%; */
+    }
+    .wetimeline-item:nth-child(even) {
+        justify-content: flex-end;
+        margin-left: 0;
+    }
+    .wetimeline-icon {
+        position: relative; /* Adjust icon position */
+    }
+    .wetimeline-item:nth-child(even) .wetimeline-icon {
+        margin-left: 0; /* Adjust icon position for even items */
+    }
+/* Responsive Text Sizes */
+body, html {
+    font-size: 16px; /* Base font size adjustment for readability */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Adjusting Section Padding for Smaller Screens */
+section {
+    padding: 15px;
+}
+
+/* Button Adjustments */
+.about-me-btn, .aboutme-btn {
+    padding: 8px 16px; /* Smaller padding */
+    font-size: 14px; /* Smaller font size for buttons */
+    margin-top: 15px;
+    margin-left: 0; /* Center align buttons when necessary */
+}
+
+/* Image and Logo Adjustments */
+.imagelogo, .tech-logo, .college-logo {
+    width: 80%; /* Adjust width for smaller screens */
+    max-width: 200px; /* Ensure images don't become too large */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center align images */
+    display: none;
+}
+
+/* Skill Section Adjustments */
+.skill {
+    font-size: 12px; /* Adjust font size for skills */
+}
+
+.skills-heading, .projects-section .section-heading, .education-heading, .otherprojects-heading {
+    font-size: 1.8em; /* Adjust heading sizes for consistency */
+}
+
+/* Project Section Adjustments */
+.project-card, .project-card-container {
+    width: 100%; /* Full width for smaller screens */
+    margin-bottom: 20px; /* Add some space between cards */
+}
+
+/* Education and Timeline Section Adjustments */
+.timeline-content, .wetimeline-content {
+    padding: 10px; /* Smaller padding inside content boxes */
+    font-size: 14px; /* Adjust font size for readability */
+}
+
+.timeline-dot, .wetimeline-item::before {
+    width: 10px; /* Smaller dots for timeline */
+    height: 10px; /* Keep consistent size for visual harmony */
+}
+
+/* Work Experience Timeline Adjustments */
+.wetimeline {
+    padding: 0 10px; /* Adjust padding for the timeline */
+}
+
+.wetimeline-item {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+}
+
+.wetimeline-item::before, .wetimeline-item:nth-child(even)::before {
+    display: block; /* Re-enable the central line dots */
+    left: auto; /* Adjust position for mobile layout */
+    right: auto;
+    top: 0;
+}
+
+.wetimeline-icon, .wetimeline-item:nth-child(even) .wetimeline-icon {
+    position: relative; /* Reset position */
+    margin-left: 0; /* Center align icons */
+    margin-bottom: 10px; /* Space between icon and content */
+}
+
+/* General Adjustments for Better Mobile Experience */
+.reveal, .skill-card, .project-card, .timeline-content, .wetimeline-content {
+    transition: none; /* Remove transitions for faster rendering on mobile */
+}
+
+/* Ensure all elements are visible and animations are disabled for smoother performance on low-powered devices */
+.reveal {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
+    .other-projects, .skillslist {
+        padding-left: 0px !important; /* Remove padding for mobile screens */
+    }
+
+}
+
+.other-projects {
+    padding-left: 142px;
+}
+
+.skillslist {
+    padding-left: 106px;
+}
