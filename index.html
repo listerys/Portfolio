@@ -260,6 +260,9 @@
         }
         #about-me .logo-section {
             flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
         }
         
         #about-me p {
@@ -267,6 +270,24 @@
             margin-bottom: 20px;
             color: #555;
             font-size: 1.1rem;
+        }
+        
+        .imagelogo {
+            text-align: center;
+        }
+        
+        .tech-logo {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 3px solid white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transform: rotate(-2deg);
+            transition: transform 0.3s ease;
+        }
+        
+        .tech-logo:hover {
+            transform: rotate(0deg) scale(1.02);
         }
         
         .profile-container {
@@ -736,6 +757,9 @@
             <a href="#projects" class="about-me-btn">View Projects</a>
         </div>
         <div class="logo-section">
+            <div class="imagelogo">
+                <img src="IMG_9662.jpg" alt="Anirban Khara" class="tech-logo">
+            </div>
             <div class="profile-container paper-layer">
                 <div class="profile-section">
                     <div class="profile-item">
