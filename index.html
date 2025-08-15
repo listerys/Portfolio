@@ -1237,368 +1237,98 @@
       <div class="section-header reveal">
         <p class="section-label">Portfolio</p>
         <h2 class="section-title">Featured Projects</h2>
-        <p class="section-description">A comprehensive showcase of my technical journey</p>
+        <p class="section-description">A selection of my recent work</p>
       </div>
-      
-      <!-- Projects Carousel Container -->
-      <div class="projects-carousel-wrapper reveal">
-        <!-- Navigation Buttons -->
-        <button class="carousel-nav carousel-nav-prev" id="carouselPrev" aria-label="Previous project">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="15 18 9 12 15 6"/>
-          </svg>
-        </button>
-        <button class="carousel-nav carousel-nav-next" id="carouselNext" aria-label="Next project">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="9 18 15 12 9 6"/>
-          </svg>
-        </button>
-        
-        <!-- Projects Carousel -->
-        <div class="projects-carousel" id="projectsCarousel">
-          <div class="carousel-track" id="carouselTrack">
-            
-            <!-- Project 1: AI Recipe Generator -->
-            <div class="project-card carousel-item">
-              <div class="project-image">
-                <img src="https://via.placeholder.com/800x400/10b981/ffffff?text=AI+Recipe+Generator" alt="AI Recipe Generator" />
-              </div>
-              <div class="project-content">
-                <span class="project-date">Feb 2025</span>
-                <h4>AI Recipe Generator</h4>
-                <p>Built with Next.js and TypeScript for personalized recipe creation from user inputs. Added secure authentication & row-level access control using Supabase Auth. Achieved 95% code coverage via Jest tests; documented UI in Storybook.</p>
-                <div class="project-tech">
-                  <span class="tag">Next.js</span>
-                  <span class="tag">TypeScript</span>
-                  <span class="tag">Supabase</span>
-                  <span class="tag">Jest</span>
-                  <span class="tag">Storybook</span>
-                </div>
-                <div class="project-links">
-                  <a href="#" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                    GitHub
-                  </a>
-                  <a href="#" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <polygon points="10 8 16 12 10 16 10 8"></polygon>
-                    </svg>
-                    Live Demo
-                  </a>
-                </div>
-              </div>
+      <div class="projects-grid">
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-image">
+            <img src="airbnb.webp" alt="Airbnb Clone" />
+          </div>
+          <div class="project-content">
+            <h4>Airbnb Clone</h4>
+            <p>Full-stack rental platform with real-time booking, payments, and advanced filtering capabilities.</p>
+            <div class="project-tech">
+              <span class="tag">Next.js</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Stripe</span>
+              <span class="tag">Tailwind</span>
             </div>
-
-            <!-- Project 2: VoyagrAI -->
-            <div class="project-card carousel-item">
-              <div class="project-image">
-                <img src="https://via.placeholder.com/800x400/3b82f6/ffffff?text=VoyagrAI" alt="VoyagrAI" />
-              </div>
-              <div class="project-content">
-                <span class="project-date">Feb 2025</span>
-                <h4>VoyagrAI – Multi-Agent RAG Travel Planner</h4>
-                <p>Agno + Groq + Next.js + Google Maps-powered travel planning tool. Uses multiple AI agents to create personalized itineraries with interactive journey visualization, optimized scheduling, budget management, and insider recommendations.</p>
-                <div class="project-tech">
-                  <span class="tag">Next.js</span>
-                  <span class="tag">Groq</span>
-                  <span class="tag">Google Maps</span>
-                  <span class="tag">RAG</span>
-                  <span class="tag">AI Agents</span>
-                </div>
-                <div class="project-links">
-                  <a href="#" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                    GitHub
-                  </a>
-                  <a href="#" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <polygon points="10 8 16 12 10 16 10 8"></polygon>
-                    </svg>
-                    Live Demo
-                  </a>
-                </div>
-              </div>
+            <div class="project-links">
+              <a href="https://github.com/listerys/Airbnb-Clone" target="_blank" rel="noopener" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                </svg>
+                Live Demo
+              </a>
             </div>
-
-            <!-- Project 3: Newzik -->
-            <div class="project-card carousel-item">
-              <div class="project-image">
-                <img src="https://via.placeholder.com/800x400/f59e0b/ffffff?text=Newzik" alt="Newzik" />
-              </div>
-              <div class="project-content">
-                <span class="project-date">Sep–Nov 2024</span>
-                <h4>Newzik – AI News Assistant</h4>
-                <p>Web app with Next.js & FastAPI to fetch top 5 relevant news articles in real time. Integrated LLaMA 3.3 for NLP and LangGraph to reduce hallucinations. Backend powered by LangChain tools, delivering contextual summaries.</p>
-                <div class="project-tech">
-                  <span class="tag">Next.js</span>
-                  <span class="tag">FastAPI</span>
-                  <span class="tag">LLaMA 3.3</span>
-                  <span class="tag">LangGraph</span>
-                  <span class="tag">LangChain</span>
-                </div>
-                <div class="project-links">
-                  <a href="#" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                    GitHub
-                  </a>
-                  <a href="#" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <polygon points="10 8 16 12 10 16 10 8"></polygon>
-                    </svg>
-                    Live Demo
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 4: BizWood -->
-            <div class="project-card carousel-item">
-              <div class="project-image">
-                <img src="https://via.placeholder.com/800x400/8b5cf6/ffffff?text=BizWood" alt="BizWood" />
-              </div>
-              <div class="project-content">
-                <span class="project-date">Aug–Sep 2024</span>
-                <h4>BizWood – Furniture E-Commerce Store</h4>
-                <p>Next.js storefront with Tailwind CSS and pre-rendered product pages. AWS Cognito microservices for unified session management. Integrated Stripe.js payments with idempotent transactions; containerized using Docker.</p>
-                <div class="project-tech">
-                  <span class="tag">Next.js</span>
-                  <span class="tag">AWS Cognito</span>
-                  <span class="tag">Stripe</span>
-                  <span class="tag">Docker</span>
-                  <span class="tag">Tailwind</span>
-                </div>
-                <div class="project-links">
-                  <a href="#" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                    GitHub
-                  </a>
-                  <a href="#" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <polygon points="10 8 16 12 10 16 10 8"></polygon>
-                    </svg>
-                    Live Demo
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 5: CISC Machine Simulator -->
-            <div class="project-card carousel-item">
-              <div class="project-image">
-                <img src="https://via.placeholder.com/800x400/ef4444/ffffff?text=CISC+Simulator" alt="CISC Machine Simulator" />
-              </div>
-              <div class="project-content">
-                <span class="project-date">Aug–Dec 2023</span>
-                <h4>CISC Machine Simulator</h4>
-                <p>Implemented pipelining to boost IPC from 4 to 5. MVC-based Swing UI with JDBC integration that improved DB transactions by 20%. Built comprehensive instruction set simulator with visualization tools.</p>
-                <div class="project-tech">
-                  <span class="tag">Java</span>
-                  <span class="tag">SQL</span>
-                  <span class="tag">JDBC</span>
-                  <span class="tag">Swing</span>
-                  <span class="tag">MVC</span>
-                </div>
-                <div class="project-links">
-                  <a href="#" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                    GitHub
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 6: Student Assist LLM Chatbot -->
-            <div class="project-card carousel-item">
-              <div class="project-image">
-                <img src="https://via.placeholder.com/800x400/06b6d4/ffffff?text=Student+Assist" alt="Student Assist Chatbot" />
-              </div>
-              <div class="project-content">
-                <span class="project-date">Aug–Nov 2023</span>
-                <h4>Student Assist LLM Chatbot</h4>
-                <p>React chatbot for uploading & chatting with audio/video over 50+ sessions. Integrated GPT-4 & Whisper APIs for async, accurate responses. Used FAISS vector search to boost retrieval precision to 85%.</p>
-                <div class="project-tech">
-                  <span class="tag">React</span>
-                  <span class="tag">GPT-4</span>
-                  <span class="tag">Whisper API</span>
-                  <span class="tag">FAISS</span>
-                  <span class="tag">Python</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://github.com/listerys/Student-Assist-Chatbot-LLM" target="_blank" rel="noopener" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                    GitHub
-                  </a>
-                  <a href="#" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <polygon points="10 8 16 12 10 16 10 8"></polygon>
-                    </svg>
-                    Live Demo
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 7: Airbnb Clone -->
-            <div class="project-card carousel-item">
-              <div class="project-image">
-                <img src="https://via.placeholder.com/800x400/ec4899/ffffff?text=Airbnb+Clone" alt="Airbnb Clone" />
-              </div>
-              <div class="project-content">
-                <span class="project-date">Feb–Apr 2022</span>
-                <h4>Airbnb Clone Web App</h4>
-                <p>Responsive Next.js clone with Supabase for real-time updates & authentication. Features include property listings, booking system, user reviews, and integrated payment processing.</p>
-                <div class="project-tech">
-                  <span class="tag">Next.js</span>
-                  <span class="tag">Supabase</span>
-                  <span class="tag">Tailwind</span>
-                  <span class="tag">Stripe</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://github.com/listerys/Airbnb-Clone" target="_blank" rel="noopener" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                    GitHub
-                  </a>
-                  <a href="#" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <polygon points="10 8 16 12 10 16 10 8"></polygon>
-                    </svg>
-                    Live Demo
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 8: Movie Recommendation Engine -->
-            <div class="project-card carousel-item">
-              <div class="project-image">
-                <img src="https://via.placeholder.com/800x400/2563eb/ffffff?text=Movie+Recommender" alt="Movie Recommender" />
-              </div>
-              <div class="project-content">
-                <span class="project-date">Feb–Apr 2022</span>
-                <h4>Personalized Movie Recommendation Engine</h4>
-                <p>React + Node.js app with TMDb API for 10K+ titles. JWT authentication & REST APIs with PostgreSQL backend. Implements collaborative filtering and content-based recommendations.</p>
-                <div class="project-tech">
-                  <span class="tag">React</span>
-                  <span class="tag">Node.js</span>
-                  <span class="tag">PostgreSQL</span>
-                  <span class="tag">TMDb API</span>
-                  <span class="tag">JWT</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://github.com/listerys/MoviesXD" target="_blank" rel="noopener" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                    GitHub
-                  </a>
-                  <a href="#" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <polygon points="10 8 16 12 10 16 10 8"></polygon>
-                    </svg>
-                    Live Demo
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 9: Sign Language Recognition -->
-            <div class="project-card carousel-item">
-              <div class="project-image">
-                <img src="https://via.placeholder.com/800x400/059669/ffffff?text=Sign+Language" alt="Sign Language Recognition" />
-              </div>
-              <div class="project-content">
-                <span class="project-date">Jul–Nov 2021</span>
-                <h4>Sign Language Recognition & Translation</h4>
-                <p>Real-time React UI with camera input; backend in Python using OpenCV & TensorFlow. Integrated with Google Assistant SDK for instant voice translation. Achieved 92% accuracy on ASL dataset.</p>
-                <div class="project-tech">
-                  <span class="tag">React</span>
-                  <span class="tag">Python</span>
-                  <span class="tag">TensorFlow</span>
-                  <span class="tag">OpenCV</span>
-                  <span class="tag">Google Assistant</span>
-                </div>
-                <div class="project-links">
-                  <a href="#" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                    GitHub
-                  </a>
-                  <a href="#" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <polygon points="10 8 16 12 10 16 10 8"></polygon>
-                    </svg>
-                    Live Demo
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 10: Bird Species API -->
-            <div class="project-card carousel-item">
-              <div class="project-image">
-                <img src="https://via.placeholder.com/800x400/84cc16/ffffff?text=Bird+Species+API" alt="Bird Species API" />
-              </div>
-              <div class="project-content">
-                <span class="project-date">Aug–Oct 2020</span>
-                <h4>Bird Species Identification API</h4>
-                <p>Flask web app with pre-trained Keras model for bird classification. HTML/CSS/Bootstrap frontend with Node.js & Flask backend. Supports 200+ bird species with 89% accuracy.</p>
-                <div class="project-tech">
-                  <span class="tag">Flask</span>
-                  <span class="tag">Keras</span>
-                  <span class="tag">Node.js</span>
-                  <span class="tag">Bootstrap</span>
-                  <span class="tag">TensorFlow</span>
-                </div>
-                <div class="project-links">
-                  <a href="#" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                    GitHub
-                  </a>
-                  <a href="#" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <polygon points="10 8 16 12 10 16 10 8"></polygon>
-                    </svg>
-                    API Docs
-                  </a>
-                </div>
-              </div>
-            </div>
-            
           </div>
         </div>
-        
-        <!-- Carousel Indicators -->
-        <div class="carousel-indicators" id="carouselIndicators"></div>
-        
-        <!-- Project Counter -->
-        <div class="project-counter">
-          <span id="currentProject">1</span> / <span id="totalProjects">10</span>
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/800x400/2563eb/ffffff?text=AI+Chatbot" alt="Student Assist Chatbot" />
+          </div>
+          <div class="project-content">
+            <h4>Student Assist LLM Chatbot</h4>
+            <p>AI-powered education assistant using GPT-4 for personalized study guidance and support.</p>
+            <div class="project-tech">
+              <span class="tag">Python</span>
+              <span class="tag">OpenAI</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">React</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/listerys/Student-Assist-Chatbot-LLM" target="_blank" rel="noopener" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal reveal-delay-3">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/800x400/2563eb/ffffff?text=Movie+Recommender" alt="MoviesXD" />
+          </div>
+          <div class="project-content">
+            <h4>MoviesXD Recommender</h4>
+            <p>ML-driven movie recommendations with collaborative filtering and content-based signals.</p>
+            <div class="project-tech">
+              <span class="tag">Python</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Flask</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/listerys/MoviesXD" target="_blank" rel="noopener" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1788,7 +1518,4 @@
   </script>
 </body>
 </html>
-
-
-
 
